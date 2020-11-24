@@ -1,0 +1,769 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3857BFD226F94C3E77FE595C /* Pods_DrillableiOS_DrillableiOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0D11B33F749FAE87168E74 /* Pods_DrillableiOS_DrillableiOSUITests.framework */; };
+		7077ED8F8749ED70D6C6AA9F /* Pods_DrillableiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10AAD54F19A5D00AD2E6A555 /* Pods_DrillableiOS.framework */; };
+		D8E7D0372523EB234516052B /* Pods_DrillableiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E46349C39B3D25D90B7A71A /* Pods_DrillableiOSTests.framework */; };
+		FB0C0DEE256D537A00F8A97E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C0DED256D537A00F8A97E /* AppDelegate.swift */; };
+		FB0C0DF0256D537A00F8A97E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C0DEF256D537A00F8A97E /* SceneDelegate.swift */; };
+		FB0C0DF2256D537A00F8A97E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C0DF1256D537A00F8A97E /* LoginViewController.swift */; };
+		FB0C0DF5256D537A00F8A97E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0C0DF3256D537A00F8A97E /* Main.storyboard */; };
+		FB0C0DF7256D537E00F8A97E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0C0DF6256D537E00F8A97E /* Assets.xcassets */; };
+		FB0C0DFA256D537E00F8A97E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0C0DF8256D537E00F8A97E /* LaunchScreen.storyboard */; };
+		FB0C0E05256D537F00F8A97E /* DrillableiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C0E04256D537F00F8A97E /* DrillableiOSTests.swift */; };
+		FB0C0E10256D537F00F8A97E /* DrillableiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C0E0F256D537F00F8A97E /* DrillableiOSUITests.swift */; };
+		FB0C0E1E256D555600F8A97E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB0C0E1D256D555600F8A97E /* GoogleService-Info.plist */; };
+		FB0C0E20256D5FE200F8A97E /* DrillBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C0E1F256D5FE200F8A97E /* DrillBankViewController.swift */; };
+		FB0C0E22256D5FF600F8A97E /* ManageTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C0E21256D5FF600F8A97E /* ManageTeamsViewController.swift */; };
+		FB0C0E24256D600300F8A97E /* ClipBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C0E23256D600300F8A97E /* ClipBoardViewController.swift */; };
+		FB0C0E28256D60AE00F8A97E /* NavigationTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C0E27256D60AE00F8A97E /* NavigationTabViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB0C0E01256D537F00F8A97E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB0C0DE2256D537A00F8A97E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB0C0DE9256D537A00F8A97E;
+			remoteInfo = DrillableiOS;
+		};
+		FB0C0E0C256D537F00F8A97E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB0C0DE2256D537A00F8A97E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB0C0DE9256D537A00F8A97E;
+			remoteInfo = DrillableiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006317360AEFA5FD7AF629EB /* Pods-DrillableiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrillableiOSTests.debug.xcconfig"; path = "Target Support Files/Pods-DrillableiOSTests/Pods-DrillableiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		02EF06FC3FC66CD46B449293 /* Pods-DrillableiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrillableiOS.debug.xcconfig"; path = "Target Support Files/Pods-DrillableiOS/Pods-DrillableiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		10AAD54F19A5D00AD2E6A555 /* Pods_DrillableiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrillableiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38CC62276D9E95FE1D2EAFBA /* Pods-DrillableiOS-DrillableiOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrillableiOS-DrillableiOSUITests.release.xcconfig"; path = "Target Support Files/Pods-DrillableiOS-DrillableiOSUITests/Pods-DrillableiOS-DrillableiOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		395104F8576AEF782D92FB38 /* Pods-DrillableiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrillableiOSTests.release.xcconfig"; path = "Target Support Files/Pods-DrillableiOSTests/Pods-DrillableiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		3E46349C39B3D25D90B7A71A /* Pods_DrillableiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrillableiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CD9F05C3EBD175D24F0A3A2 /* Pods-DrillableiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrillableiOS.release.xcconfig"; path = "Target Support Files/Pods-DrillableiOS/Pods-DrillableiOS.release.xcconfig"; sourceTree = "<group>"; };
+		A6CEBE2E7706A68FC8E1A260 /* Pods-DrillableiOS-DrillableiOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrillableiOS-DrillableiOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-DrillableiOS-DrillableiOSUITests/Pods-DrillableiOS-DrillableiOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB0D11B33F749FAE87168E74 /* Pods_DrillableiOS_DrillableiOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrillableiOS_DrillableiOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0C0DEA256D537A00F8A97E /* DrillableiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrillableiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0C0DED256D537A00F8A97E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB0C0DEF256D537A00F8A97E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FB0C0DF1256D537A00F8A97E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FB0C0DF4256D537A00F8A97E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB0C0DF6256D537E00F8A97E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB0C0DF9256D537E00F8A97E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB0C0DFB256D537F00F8A97E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB0C0E00256D537F00F8A97E /* DrillableiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrillableiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0C0E04256D537F00F8A97E /* DrillableiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillableiOSTests.swift; sourceTree = "<group>"; };
+		FB0C0E06256D537F00F8A97E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB0C0E0B256D537F00F8A97E /* DrillableiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrillableiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0C0E0F256D537F00F8A97E /* DrillableiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillableiOSUITests.swift; sourceTree = "<group>"; };
+		FB0C0E11256D537F00F8A97E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB0C0E1D256D555600F8A97E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FB0C0E1F256D5FE200F8A97E /* DrillBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillBankViewController.swift; sourceTree = "<group>"; };
+		FB0C0E21256D5FF600F8A97E /* ManageTeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTeamsViewController.swift; sourceTree = "<group>"; };
+		FB0C0E23256D600300F8A97E /* ClipBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipBoardViewController.swift; sourceTree = "<group>"; };
+		FB0C0E27256D60AE00F8A97E /* NavigationTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTabViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB0C0DE7256D537A00F8A97E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7077ED8F8749ED70D6C6AA9F /* Pods_DrillableiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB0C0DFD256D537F00F8A97E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8E7D0372523EB234516052B /* Pods_DrillableiOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB0C0E08256D537F00F8A97E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3857BFD226F94C3E77FE595C /* Pods_DrillableiOS_DrillableiOSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41A23B1A1C0C5B460B5EA895 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02EF06FC3FC66CD46B449293 /* Pods-DrillableiOS.debug.xcconfig */,
+				9CD9F05C3EBD175D24F0A3A2 /* Pods-DrillableiOS.release.xcconfig */,
+				A6CEBE2E7706A68FC8E1A260 /* Pods-DrillableiOS-DrillableiOSUITests.debug.xcconfig */,
+				38CC62276D9E95FE1D2EAFBA /* Pods-DrillableiOS-DrillableiOSUITests.release.xcconfig */,
+				006317360AEFA5FD7AF629EB /* Pods-DrillableiOSTests.debug.xcconfig */,
+				395104F8576AEF782D92FB38 /* Pods-DrillableiOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B2FB23CD0F5C902CCEDBF874 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10AAD54F19A5D00AD2E6A555 /* Pods_DrillableiOS.framework */,
+				DB0D11B33F749FAE87168E74 /* Pods_DrillableiOS_DrillableiOSUITests.framework */,
+				3E46349C39B3D25D90B7A71A /* Pods_DrillableiOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB0C0DE1256D537A00F8A97E = {
+			isa = PBXGroup;
+			children = (
+				FB0C0DEC256D537A00F8A97E /* DrillableiOS */,
+				FB0C0E03256D537F00F8A97E /* DrillableiOSTests */,
+				FB0C0E0E256D537F00F8A97E /* DrillableiOSUITests */,
+				FB0C0DEB256D537A00F8A97E /* Products */,
+				41A23B1A1C0C5B460B5EA895 /* Pods */,
+				B2FB23CD0F5C902CCEDBF874 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FB0C0DEB256D537A00F8A97E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB0C0DEA256D537A00F8A97E /* DrillableiOS.app */,
+				FB0C0E00256D537F00F8A97E /* DrillableiOSTests.xctest */,
+				FB0C0E0B256D537F00F8A97E /* DrillableiOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB0C0DEC256D537A00F8A97E /* DrillableiOS */ = {
+			isa = PBXGroup;
+			children = (
+				FB0C0DED256D537A00F8A97E /* AppDelegate.swift */,
+				FB0C0DEF256D537A00F8A97E /* SceneDelegate.swift */,
+				FB0C0DF1256D537A00F8A97E /* LoginViewController.swift */,
+				FB0C0E1F256D5FE200F8A97E /* DrillBankViewController.swift */,
+				FB0C0E21256D5FF600F8A97E /* ManageTeamsViewController.swift */,
+				FB0C0E23256D600300F8A97E /* ClipBoardViewController.swift */,
+				FB0C0DF3256D537A00F8A97E /* Main.storyboard */,
+				FB0C0DF6256D537E00F8A97E /* Assets.xcassets */,
+				FB0C0DF8256D537E00F8A97E /* LaunchScreen.storyboard */,
+				FB0C0DFB256D537F00F8A97E /* Info.plist */,
+				FB0C0E1D256D555600F8A97E /* GoogleService-Info.plist */,
+				FB0C0E27256D60AE00F8A97E /* NavigationTabViewController.swift */,
+			);
+			path = DrillableiOS;
+			sourceTree = "<group>";
+		};
+		FB0C0E03256D537F00F8A97E /* DrillableiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB0C0E04256D537F00F8A97E /* DrillableiOSTests.swift */,
+				FB0C0E06256D537F00F8A97E /* Info.plist */,
+			);
+			path = DrillableiOSTests;
+			sourceTree = "<group>";
+		};
+		FB0C0E0E256D537F00F8A97E /* DrillableiOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB0C0E0F256D537F00F8A97E /* DrillableiOSUITests.swift */,
+				FB0C0E11256D537F00F8A97E /* Info.plist */,
+			);
+			path = DrillableiOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB0C0DE9256D537A00F8A97E /* DrillableiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB0C0E14256D537F00F8A97E /* Build configuration list for PBXNativeTarget "DrillableiOS" */;
+			buildPhases = (
+				8AD18E7543040452BBDAA99F /* [CP] Check Pods Manifest.lock */,
+				FB0C0DE6256D537A00F8A97E /* Sources */,
+				FB0C0DE7256D537A00F8A97E /* Frameworks */,
+				FB0C0DE8256D537A00F8A97E /* Resources */,
+				680B9AB17C0B9C29056217CF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrillableiOS;
+			productName = DrillableiOS;
+			productReference = FB0C0DEA256D537A00F8A97E /* DrillableiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB0C0DFF256D537F00F8A97E /* DrillableiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB0C0E17256D537F00F8A97E /* Build configuration list for PBXNativeTarget "DrillableiOSTests" */;
+			buildPhases = (
+				1B9E324F01D5BB6DFF31354B /* [CP] Check Pods Manifest.lock */,
+				FB0C0DFC256D537F00F8A97E /* Sources */,
+				FB0C0DFD256D537F00F8A97E /* Frameworks */,
+				FB0C0DFE256D537F00F8A97E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB0C0E02256D537F00F8A97E /* PBXTargetDependency */,
+			);
+			name = DrillableiOSTests;
+			productName = DrillableiOSTests;
+			productReference = FB0C0E00256D537F00F8A97E /* DrillableiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB0C0E0A256D537F00F8A97E /* DrillableiOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB0C0E1A256D537F00F8A97E /* Build configuration list for PBXNativeTarget "DrillableiOSUITests" */;
+			buildPhases = (
+				B344ACD0918EBB3775D4E8B8 /* [CP] Check Pods Manifest.lock */,
+				FB0C0E07256D537F00F8A97E /* Sources */,
+				FB0C0E08256D537F00F8A97E /* Frameworks */,
+				FB0C0E09256D537F00F8A97E /* Resources */,
+				DD4F285C739B2460815E201D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB0C0E0D256D537F00F8A97E /* PBXTargetDependency */,
+			);
+			name = DrillableiOSUITests;
+			productName = DrillableiOSUITests;
+			productReference = FB0C0E0B256D537F00F8A97E /* DrillableiOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB0C0DE2256D537A00F8A97E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Creative League";
+				TargetAttributes = {
+					FB0C0DE9256D537A00F8A97E = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					FB0C0DFF256D537F00F8A97E = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = FB0C0DE9256D537A00F8A97E;
+					};
+					FB0C0E0A256D537F00F8A97E = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = FB0C0DE9256D537A00F8A97E;
+					};
+				};
+			};
+			buildConfigurationList = FB0C0DE5256D537A00F8A97E /* Build configuration list for PBXProject "DrillableiOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB0C0DE1256D537A00F8A97E;
+			productRefGroup = FB0C0DEB256D537A00F8A97E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB0C0DE9256D537A00F8A97E /* DrillableiOS */,
+				FB0C0DFF256D537F00F8A97E /* DrillableiOSTests */,
+				FB0C0E0A256D537F00F8A97E /* DrillableiOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB0C0DE8256D537A00F8A97E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0C0DFA256D537E00F8A97E /* LaunchScreen.storyboard in Resources */,
+				FB0C0E1E256D555600F8A97E /* GoogleService-Info.plist in Resources */,
+				FB0C0DF7256D537E00F8A97E /* Assets.xcassets in Resources */,
+				FB0C0DF5256D537A00F8A97E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB0C0DFE256D537F00F8A97E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB0C0E09256D537F00F8A97E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B9E324F01D5BB6DFF31354B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrillableiOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		680B9AB17C0B9C29056217CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrillableiOS/Pods-DrillableiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrillableiOS/Pods-DrillableiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DrillableiOS/Pods-DrillableiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AD18E7543040452BBDAA99F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrillableiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B344ACD0918EBB3775D4E8B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrillableiOS-DrillableiOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD4F285C739B2460815E201D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrillableiOS-DrillableiOSUITests/Pods-DrillableiOS-DrillableiOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrillableiOS-DrillableiOSUITests/Pods-DrillableiOS-DrillableiOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DrillableiOS-DrillableiOSUITests/Pods-DrillableiOS-DrillableiOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB0C0DE6256D537A00F8A97E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0C0DF2256D537A00F8A97E /* LoginViewController.swift in Sources */,
+				FB0C0E24256D600300F8A97E /* ClipBoardViewController.swift in Sources */,
+				FB0C0DEE256D537A00F8A97E /* AppDelegate.swift in Sources */,
+				FB0C0E28256D60AE00F8A97E /* NavigationTabViewController.swift in Sources */,
+				FB0C0E20256D5FE200F8A97E /* DrillBankViewController.swift in Sources */,
+				FB0C0E22256D5FF600F8A97E /* ManageTeamsViewController.swift in Sources */,
+				FB0C0DF0256D537A00F8A97E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB0C0DFC256D537F00F8A97E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0C0E05256D537F00F8A97E /* DrillableiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB0C0E07256D537F00F8A97E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0C0E10256D537F00F8A97E /* DrillableiOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB0C0E02256D537F00F8A97E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB0C0DE9256D537A00F8A97E /* DrillableiOS */;
+			targetProxy = FB0C0E01256D537F00F8A97E /* PBXContainerItemProxy */;
+		};
+		FB0C0E0D256D537F00F8A97E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB0C0DE9256D537A00F8A97E /* DrillableiOS */;
+			targetProxy = FB0C0E0C256D537F00F8A97E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB0C0DF3256D537A00F8A97E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB0C0DF4256D537A00F8A97E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB0C0DF8256D537E00F8A97E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB0C0DF9256D537E00F8A97E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB0C0E12256D537F00F8A97E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB0C0E13256D537F00F8A97E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB0C0E15256D537F00F8A97E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02EF06FC3FC66CD46B449293 /* Pods-DrillableiOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUK73MFX94;
+				INFOPLIST_FILE = DrillableiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CreativeLeague.DrillableiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB0C0E16256D537F00F8A97E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CD9F05C3EBD175D24F0A3A2 /* Pods-DrillableiOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUK73MFX94;
+				INFOPLIST_FILE = DrillableiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CreativeLeague.DrillableiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB0C0E18256D537F00F8A97E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 006317360AEFA5FD7AF629EB /* Pods-DrillableiOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUK73MFX94;
+				INFOPLIST_FILE = DrillableiOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CreativeLeague.DrillableiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrillableiOS.app/DrillableiOS";
+			};
+			name = Debug;
+		};
+		FB0C0E19256D537F00F8A97E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 395104F8576AEF782D92FB38 /* Pods-DrillableiOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUK73MFX94;
+				INFOPLIST_FILE = DrillableiOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CreativeLeague.DrillableiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrillableiOS.app/DrillableiOS";
+			};
+			name = Release;
+		};
+		FB0C0E1B256D537F00F8A97E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6CEBE2E7706A68FC8E1A260 /* Pods-DrillableiOS-DrillableiOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUK73MFX94;
+				INFOPLIST_FILE = DrillableiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CreativeLeague.DrillableiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrillableiOS;
+			};
+			name = Debug;
+		};
+		FB0C0E1C256D537F00F8A97E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38CC62276D9E95FE1D2EAFBA /* Pods-DrillableiOS-DrillableiOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUK73MFX94;
+				INFOPLIST_FILE = DrillableiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CreativeLeague.DrillableiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrillableiOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB0C0DE5256D537A00F8A97E /* Build configuration list for PBXProject "DrillableiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB0C0E12256D537F00F8A97E /* Debug */,
+				FB0C0E13256D537F00F8A97E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB0C0E14256D537F00F8A97E /* Build configuration list for PBXNativeTarget "DrillableiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB0C0E15256D537F00F8A97E /* Debug */,
+				FB0C0E16256D537F00F8A97E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB0C0E17256D537F00F8A97E /* Build configuration list for PBXNativeTarget "DrillableiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB0C0E18256D537F00F8A97E /* Debug */,
+				FB0C0E19256D537F00F8A97E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB0C0E1A256D537F00F8A97E /* Build configuration list for PBXNativeTarget "DrillableiOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB0C0E1B256D537F00F8A97E /* Debug */,
+				FB0C0E1C256D537F00F8A97E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB0C0DE2256D537A00F8A97E /* Project object */;
+}

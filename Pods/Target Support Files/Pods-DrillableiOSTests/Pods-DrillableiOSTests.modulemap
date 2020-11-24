@@ -1,0 +1,6 @@
+framework module Pods_DrillableiOSTests {
+  umbrella header "Pods-DrillableiOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

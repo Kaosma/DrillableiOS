@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>15822012428-kph7koro5re9nje452vcplmvnqib547s.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.15822012428-kph7koro5re9nje452vcplmvnqib547s</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBTGqPcTAjQW0CCHRzX7LpErrjhK1pNnoQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>15822012428</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.CreativeLeague.DrillableiOS</string>
+	<key>PROJECT_ID</key>
+	<string>drillable</string>
+	<key>STORAGE_BUCKET</key>
+	<string>drillable.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:15822012428:ios:dbf3f63e52cc7ea0ff6e29</string>
+	<key>DATABASE_URL</key>
+	<string>https://drillable.firebaseio.com</string>
+</dict>
+</plist>
