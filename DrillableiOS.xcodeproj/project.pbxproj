@@ -22,7 +22,10 @@
 		FB0C0E20256D5FE200F8A97E /* DrillBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C0E1F256D5FE200F8A97E /* DrillBankViewController.swift */; };
 		FB0C0E22256D5FF600F8A97E /* ManageTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C0E21256D5FF600F8A97E /* ManageTeamsViewController.swift */; };
 		FB0C0E24256D600300F8A97E /* ClipBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C0E23256D600300F8A97E /* ClipBoardViewController.swift */; };
-		FB0C0E28256D60AE00F8A97E /* NavigationTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C0E27256D60AE00F8A97E /* NavigationTabViewController.swift */; };
+		FB0C0E28256D60AE00F8A97E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C0E27256D60AE00F8A97E /* TabBarViewController.swift */; };
+		FBD512C9256D8FA2003A6780 /* Drill.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD512C8256D8FA2003A6780 /* Drill.swift */; };
+		FBD512CC256D9203003A6780 /* DrillBankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD512CA256D9203003A6780 /* DrillBankTableViewCell.swift */; };
+		FBD512CD256D9203003A6780 /* DrillBankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBD512CB256D9203003A6780 /* DrillBankTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +73,10 @@
 		FB0C0E1F256D5FE200F8A97E /* DrillBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillBankViewController.swift; sourceTree = "<group>"; };
 		FB0C0E21256D5FF600F8A97E /* ManageTeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTeamsViewController.swift; sourceTree = "<group>"; };
 		FB0C0E23256D600300F8A97E /* ClipBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipBoardViewController.swift; sourceTree = "<group>"; };
-		FB0C0E27256D60AE00F8A97E /* NavigationTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTabViewController.swift; sourceTree = "<group>"; };
+		FB0C0E27256D60AE00F8A97E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		FBD512C8256D8FA2003A6780 /* Drill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drill.swift; sourceTree = "<group>"; };
+		FBD512CA256D9203003A6780 /* DrillBankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillBankTableViewCell.swift; sourceTree = "<group>"; };
+		FBD512CB256D9203003A6780 /* DrillBankTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrillBankTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,18 +155,16 @@
 		FB0C0DEC256D537A00F8A97E /* DrillableiOS */ = {
 			isa = PBXGroup;
 			children = (
+				FBD512D1256DADC7003A6780 /* PrototypeCells */,
+				FBD512D0256DAD89003A6780 /* Controllers */,
+				FBD512CF256DAD82003A6780 /* Views */,
+				FBD512CE256DAD7C003A6780 /* Model */,
 				FB0C0DED256D537A00F8A97E /* AppDelegate.swift */,
 				FB0C0DEF256D537A00F8A97E /* SceneDelegate.swift */,
-				FB0C0DF1256D537A00F8A97E /* LoginViewController.swift */,
-				FB0C0E1F256D5FE200F8A97E /* DrillBankViewController.swift */,
-				FB0C0E21256D5FF600F8A97E /* ManageTeamsViewController.swift */,
-				FB0C0E23256D600300F8A97E /* ClipBoardViewController.swift */,
-				FB0C0DF3256D537A00F8A97E /* Main.storyboard */,
 				FB0C0DF6256D537E00F8A97E /* Assets.xcassets */,
 				FB0C0DF8256D537E00F8A97E /* LaunchScreen.storyboard */,
 				FB0C0DFB256D537F00F8A97E /* Info.plist */,
 				FB0C0E1D256D555600F8A97E /* GoogleService-Info.plist */,
-				FB0C0E27256D60AE00F8A97E /* NavigationTabViewController.swift */,
 			);
 			path = DrillableiOS;
 			sourceTree = "<group>";
@@ -181,6 +185,43 @@
 				FB0C0E11256D537F00F8A97E /* Info.plist */,
 			);
 			path = DrillableiOSUITests;
+			sourceTree = "<group>";
+		};
+		FBD512CE256DAD7C003A6780 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBD512C8256D8FA2003A6780 /* Drill.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FBD512CF256DAD82003A6780 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB0C0DF3256D537A00F8A97E /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FBD512D0256DAD89003A6780 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB0C0DF1256D537A00F8A97E /* LoginViewController.swift */,
+				FB0C0E1F256D5FE200F8A97E /* DrillBankViewController.swift */,
+				FB0C0E21256D5FF600F8A97E /* ManageTeamsViewController.swift */,
+				FB0C0E23256D600300F8A97E /* ClipBoardViewController.swift */,
+				FB0C0E27256D60AE00F8A97E /* TabBarViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FBD512D1256DADC7003A6780 /* PrototypeCells */ = {
+			isa = PBXGroup;
+			children = (
+				FBD512CA256D9203003A6780 /* DrillBankTableViewCell.swift */,
+				FBD512CB256D9203003A6780 /* DrillBankTableViewCell.xib */,
+			);
+			path = PrototypeCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +336,7 @@
 				FB0C0DFA256D537E00F8A97E /* LaunchScreen.storyboard in Resources */,
 				FB0C0E1E256D555600F8A97E /* GoogleService-Info.plist in Resources */,
 				FB0C0DF7256D537E00F8A97E /* Assets.xcassets in Resources */,
+				FBD512CD256D9203003A6780 /* DrillBankTableViewCell.xib in Resources */,
 				FB0C0DF5256D537A00F8A97E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,9 +468,11 @@
 				FB0C0DF2256D537A00F8A97E /* LoginViewController.swift in Sources */,
 				FB0C0E24256D600300F8A97E /* ClipBoardViewController.swift in Sources */,
 				FB0C0DEE256D537A00F8A97E /* AppDelegate.swift in Sources */,
-				FB0C0E28256D60AE00F8A97E /* NavigationTabViewController.swift in Sources */,
+				FB0C0E28256D60AE00F8A97E /* TabBarViewController.swift in Sources */,
 				FB0C0E20256D5FE200F8A97E /* DrillBankViewController.swift in Sources */,
+				FBD512C9256D8FA2003A6780 /* Drill.swift in Sources */,
 				FB0C0E22256D5FF600F8A97E /* ManageTeamsViewController.swift in Sources */,
+				FBD512CC256D9203003A6780 /* DrillBankTableViewCell.swift in Sources */,
 				FB0C0DF0256D537A00F8A97E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

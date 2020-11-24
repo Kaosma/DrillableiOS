@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="KGk-i7-Jjw" customClass="DrillBankTableViewCell" customModule="DrillableiOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" userLabel="drillView">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ydF-8A-huR" userLabel="drillContentView">
+                        <rect key="frame" x="5" y="5" width="404" height="100"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bk-nb-Lhw" userLabel="nameLabel">
+                                <rect key="frame" x="10" y="10" width="45" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="PZ9-LF-rkb">
+                                <rect key="frame" x="314" y="12.5" width="80" height="75.5"/>
+                                <color key="tintColor" red="0.1137254902" green="0.66641485359999997" blue="0.3294117647" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="DLz-0w-AX2"/>
+                                    <constraint firstAttribute="width" constant="80" id="wGi-oU-0re"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5qB-p5-1RQ">
+                                <rect key="frame" x="10" y="67" width="80" height="28"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LvL-hM-Ui6" userLabel="rateButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="32" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="RATE"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xhm-XY-KlV" userLabel="viewButton">
+                                        <rect key="frame" x="47" y="0.0" width="33" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="VIEW"/>
+                                        <connections>
+                                            <action selector="viewButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cOO-7n-Upd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="tintColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJS-iS-Jng" userLabel="ratinglabel">
+                                <rect key="frame" x="252" y="10" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dig-q5-qv2" userLabel="contentLabel">
+                                <rect key="frame" x="256.5" y="72" width="37.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="PZ9-LF-rkb" secondAttribute="bottom" constant="10" id="2BF-38-YmN"/>
+                            <constraint firstAttribute="bottom" secondItem="Dig-q5-qv2" secondAttribute="bottom" constant="10" id="D2r-uH-47Z"/>
+                            <constraint firstItem="5qB-p5-1RQ" firstAttribute="leading" secondItem="ydF-8A-huR" secondAttribute="leading" constant="10" id="K0N-9C-6bi"/>
+                            <constraint firstItem="PZ9-LF-rkb" firstAttribute="leading" secondItem="CJS-iS-Jng" secondAttribute="trailing" constant="20" id="Nvb-Oi-6rf"/>
+                            <constraint firstItem="PZ9-LF-rkb" firstAttribute="leading" secondItem="Dig-q5-qv2" secondAttribute="trailing" constant="20" id="OAD-DX-FL5"/>
+                            <constraint firstItem="CJS-iS-Jng" firstAttribute="top" secondItem="ydF-8A-huR" secondAttribute="top" constant="10" id="VGI-Ez-aHH"/>
+                            <constraint firstItem="PZ9-LF-rkb" firstAttribute="top" secondItem="ydF-8A-huR" secondAttribute="top" constant="10" id="eHm-gG-bRA"/>
+                            <constraint firstItem="9bk-nb-Lhw" firstAttribute="leading" secondItem="ydF-8A-huR" secondAttribute="leading" constant="10" id="eSn-3n-3OF"/>
+                            <constraint firstAttribute="trailing" secondItem="PZ9-LF-rkb" secondAttribute="trailing" constant="10" id="i5N-a2-rEv"/>
+                            <constraint firstAttribute="bottom" secondItem="5qB-p5-1RQ" secondAttribute="bottom" constant="5" id="jp7-83-2cP"/>
+                            <constraint firstItem="9bk-nb-Lhw" firstAttribute="top" secondItem="ydF-8A-huR" secondAttribute="top" constant="10" id="qgf-mk-XKN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.2274509804" green="0.20784313730000001" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ydF-8A-huR" secondAttribute="bottom" constant="5" id="HAv-9Y-ako"/>
+                    <constraint firstItem="ydF-8A-huR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="S82-gE-SsL"/>
+                    <constraint firstItem="ydF-8A-huR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="mU3-sU-MVJ"/>
+                    <constraint firstAttribute="trailing" secondItem="ydF-8A-huR" secondAttribute="trailing" constant="5" id="ui3-pw-wcy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="drillContentLabel" destination="Dig-q5-qv2" id="xMw-Jc-chC"/>
+                <outlet property="drillContentView" destination="ydF-8A-huR" id="5VD-RE-y9S"/>
+                <outlet property="drillNameLabel" destination="9bk-nb-Lhw" id="uc9-Ta-gwf"/>
+                <outlet property="drillRatingLabel" destination="CJS-iS-Jng" id="Ngj-r3-tZP"/>
+                <outlet property="rateButtonPressed" destination="LvL-hM-Ui6" id="hyj-b6-9qQ"/>
+            </connections>
+            <point key="canvasLocation" x="121.73913043478262" y="127.90178571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="video.fill" catalog="system" width="128" height="82"/>
+    </resources>
+</document>

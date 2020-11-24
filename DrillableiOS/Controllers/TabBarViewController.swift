@@ -31,7 +31,7 @@ extension UIImage{
     with custom color above or below the selected tab bar item using
     selectionIndicatorImage property on the UITabBar class
  **/
-@IBDesignable class TTabBarViewController: UITabBarController{
+@IBDesignable class TabBarViewController: UITabBarController{
     /*
         color of the indicator
      */

@@ -29,10 +29,40 @@
                     <view key="view" contentMode="scaleToFill" id="vvB-tp-uNe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.2274509804" green="0.20784313730000001" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JwR-2g-bcW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" red="0.2274509804" green="0.20784313730000001" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="edJ-Jb-CF7">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="edJ-Jb-CF7" id="h6Q-BK-YHr">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Iwo-vz-kWH" id="nRC-yA-rSQ"/>
+                                    <outlet property="delegate" destination="Iwo-vz-kWH" id="hI3-0t-Zf5"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.45098039220000002" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="DBD-1s-ERo" firstAttribute="trailing" secondItem="JwR-2g-bcW" secondAttribute="trailing" id="5hl-n0-1cs"/>
+                            <constraint firstItem="JwR-2g-bcW" firstAttribute="leading" secondItem="DBD-1s-ERo" secondAttribute="leading" id="B43-Wn-rgR"/>
+                            <constraint firstItem="DBD-1s-ERo" firstAttribute="bottom" secondItem="JwR-2g-bcW" secondAttribute="bottom" id="BGF-qM-uK6"/>
+                            <constraint firstItem="JwR-2g-bcW" firstAttribute="top" secondItem="DBD-1s-ERo" secondAttribute="top" id="bkM-lg-fQe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DBD-1s-ERo"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Drill Bank" image="list.bullet.below.rectangle" catalog="system" id="8so-HG-x7K"/>
+                    <connections>
+                        <outlet property="drillBankTableView" destination="JwR-2g-bcW" id="Hzf-eM-mr6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ikv-G0-jQb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,7 +71,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="D5h-IR-H5o">
             <objects>
-                <tabBarController id="cBX-2i-scu" customClass="TTabBarViewController" customModule="DrillableiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="cBX-2i-scu" customClass="TabBarViewController" customModule="DrillableiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9fb-3j-DB0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -77,7 +107,7 @@
                     <view key="view" contentMode="scaleToFill" id="chE-ye-Jfo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.2274509804" green="0.20784313730000001" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="1" green="0.45098039220000002" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="4XJ-AQ-Kxm"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Manage Teams" image="person.3" catalog="system" id="e4I-jk-dRi"/>
@@ -93,7 +123,19 @@
                     <view key="view" contentMode="scaleToFill" id="Pfs-xx-sMm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.2274509804" green="0.20784313730000001" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7G-De-aQf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" red="0.2274509804" green="0.20784313730000001" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.45098039220000002" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="g7G-De-aQf" firstAttribute="top" secondItem="9C3-qt-tGj" secondAttribute="top" id="9wP-sa-wtw"/>
+                            <constraint firstItem="9C3-qt-tGj" firstAttribute="bottom" secondItem="g7G-De-aQf" secondAttribute="bottom" id="XDg-5n-kYz"/>
+                            <constraint firstItem="9C3-qt-tGj" firstAttribute="trailing" secondItem="g7G-De-aQf" secondAttribute="trailing" id="hIU-3G-ddV"/>
+                            <constraint firstItem="g7G-De-aQf" firstAttribute="leading" secondItem="9C3-qt-tGj" secondAttribute="leading" id="z3v-IT-OtB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9C3-qt-tGj"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Clip Board" image="square.and.pencil" catalog="system" id="02L-BU-iQt"/>
