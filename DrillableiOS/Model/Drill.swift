@@ -12,5 +12,14 @@ struct Drill {
     let name : String
     let length : Int
     let content : String
-    let rating : [String : Any]
+    let id : String
+    let ratings : [String : Int]
+    
+    var rating: Int {
+        var totalRating = 0
+        for userRating in ratings {
+            totalRating += userRating.value
+        }
+        return totalRating/ratings.count
+    }
 }
