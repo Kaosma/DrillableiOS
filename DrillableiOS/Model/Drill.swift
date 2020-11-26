@@ -15,11 +15,11 @@ struct Drill {
     let id : String
     let ratings : [String : Int]
     
-    var rating: Int {
+    var rating: Double {
         var totalRating = 0
         for userRating in ratings {
             totalRating += userRating.value
         }
-        return totalRating/ratings.count
+        return Double(totalRating/ratings.count)
     }
 }

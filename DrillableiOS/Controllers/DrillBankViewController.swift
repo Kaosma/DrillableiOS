@@ -31,7 +31,6 @@ class DrillBankViewController: UIViewController {
                 print("Error getting documents: \(err)")
             } else {
                 for document in querySnapshot!.documents {
-                    print("--------------------------")
                     let dictionary = document.data()
                     
                     if let name = dictionary["name"] as? String, let length = dictionary["length"] as? Int, let content = dictionary["content"] as? String {

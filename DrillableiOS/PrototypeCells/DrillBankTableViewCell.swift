@@ -10,6 +10,7 @@ import UIKit
 
 class DrillBankTableViewCell: UITableViewCell {
 
+    var isViewed = false
     
     @IBOutlet weak var drillContentView: UIView!
     @IBOutlet weak var drillNameLabel: UILabel!
@@ -17,7 +18,23 @@ class DrillBankTableViewCell: UITableViewCell {
     @IBOutlet weak var drillContentLabel: UILabel!
    
     @IBOutlet weak var rateButtonPressed: UIButton!
+    
     @IBAction func viewButtonPressed(_ sender: UIButton) {
+        if isViewed {
+            sender.setImage(UIImage(named: "chevron.compact.down"), for: .normal)
+            isViewed = false
+            print("setting down")
+        } else {
+            sender.setImage(UIImage(named: "chevron.compact.up"), for: .normal)
+            isViewed = true
+            print("setting up")
+        }
+        /*if sender.currentImage!.isEqual(UIImage(named: "chevron.compact.down")) {
+            
+            sender.setImage(UIImage(named: "chevron.compact.up")!, for: .normal)
+        } else {
+            sender.setImage(UIImage(named: "chevron.compact.down")!, for: .normal)
+        }*/
     }
     
     override func awakeFromNib() {

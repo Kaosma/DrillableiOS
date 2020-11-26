@@ -23,6 +23,10 @@
 		FB0C0E22256D5FF600F8A97E /* ManageTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C0E21256D5FF600F8A97E /* ManageTeamsViewController.swift */; };
 		FB0C0E24256D600300F8A97E /* ClipBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C0E23256D600300F8A97E /* ClipBoardViewController.swift */; };
 		FB0C0E28256D60AE00F8A97E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C0E27256D60AE00F8A97E /* TabBarViewController.swift */; };
+		FB70FC7F2570306B0065563C /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70FC7E2570306B0065563C /* Team.swift */; };
+		FB70FC812570321B0065563C /* Practice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70FC802570321B0065563C /* Practice.swift */; };
+		FB70FC8325703ECB0065563C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70FC8225703ECB0065563C /* SignUpViewController.swift */; };
+		FB70FC85257057F80065563C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70FC84257057F80065563C /* SplashViewController.swift */; };
 		FBD512C9256D8FA2003A6780 /* Drill.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD512C8256D8FA2003A6780 /* Drill.swift */; };
 		FBD512CC256D9203003A6780 /* DrillBankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD512CA256D9203003A6780 /* DrillBankTableViewCell.swift */; };
 		FBD512CD256D9203003A6780 /* DrillBankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBD512CB256D9203003A6780 /* DrillBankTableViewCell.xib */; };
@@ -74,6 +78,10 @@
 		FB0C0E21256D5FF600F8A97E /* ManageTeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTeamsViewController.swift; sourceTree = "<group>"; };
 		FB0C0E23256D600300F8A97E /* ClipBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipBoardViewController.swift; sourceTree = "<group>"; };
 		FB0C0E27256D60AE00F8A97E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		FB70FC7E2570306B0065563C /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		FB70FC802570321B0065563C /* Practice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice.swift; sourceTree = "<group>"; };
+		FB70FC8225703ECB0065563C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FB70FC84257057F80065563C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		FBD512C8256D8FA2003A6780 /* Drill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drill.swift; sourceTree = "<group>"; };
 		FBD512CA256D9203003A6780 /* DrillBankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillBankTableViewCell.swift; sourceTree = "<group>"; };
 		FBD512CB256D9203003A6780 /* DrillBankTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrillBankTableViewCell.xib; sourceTree = "<group>"; };
@@ -191,6 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				FBD512C8256D8FA2003A6780 /* Drill.swift */,
+				FB70FC7E2570306B0065563C /* Team.swift */,
+				FB70FC802570321B0065563C /* Practice.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -211,6 +221,8 @@
 				FB0C0E21256D5FF600F8A97E /* ManageTeamsViewController.swift */,
 				FB0C0E23256D600300F8A97E /* ClipBoardViewController.swift */,
 				FB0C0E27256D60AE00F8A97E /* TabBarViewController.swift */,
+				FB70FC8225703ECB0065563C /* SignUpViewController.swift */,
+				FB70FC84257057F80065563C /* SplashViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -467,12 +479,16 @@
 			files = (
 				FB0C0DF2256D537A00F8A97E /* LoginViewController.swift in Sources */,
 				FB0C0E24256D600300F8A97E /* ClipBoardViewController.swift in Sources */,
+				FB70FC812570321B0065563C /* Practice.swift in Sources */,
 				FB0C0DEE256D537A00F8A97E /* AppDelegate.swift in Sources */,
 				FB0C0E28256D60AE00F8A97E /* TabBarViewController.swift in Sources */,
 				FB0C0E20256D5FE200F8A97E /* DrillBankViewController.swift in Sources */,
+				FB70FC85257057F80065563C /* SplashViewController.swift in Sources */,
+				FB70FC8325703ECB0065563C /* SignUpViewController.swift in Sources */,
 				FBD512C9256D8FA2003A6780 /* Drill.swift in Sources */,
 				FB0C0E22256D5FF600F8A97E /* ManageTeamsViewController.swift in Sources */,
 				FBD512CC256D9203003A6780 /* DrillBankTableViewCell.swift in Sources */,
+				FB70FC7F2570306B0065563C /* Team.swift in Sources */,
 				FB0C0DF0256D537A00F8A97E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
