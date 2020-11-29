@@ -13,13 +13,19 @@ struct Drill {
     let length : Int
     let content : String
     let id : String
-    let ratings : [String : Int]
+    let ratings : [Int]
     
     var rating: Double {
         var totalRating = 0
         for userRating in ratings {
-            totalRating += userRating.value
+            totalRating += userRating
         }
-        return Double(totalRating/ratings.count)
+        // Calculating the rating of a drill and rounding up to one decimal
+        if ratings.count != 0 {
+            let totalRating = Double(totalRating)/Double(ratings.count)
+            return Double(round(10*totalRating)/10)
+        } else {
+            return 0.0
+        }
     }
 }
