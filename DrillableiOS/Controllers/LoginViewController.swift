@@ -27,7 +27,17 @@ class LoginViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        emailTextField.layer.cornerRadius = 10
+        emailTextField.layer.borderWidth = 3
+        passwordTextField.layer.cornerRadius = 10
+        passwordTextField.layer.borderWidth = 3
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        guard let navBar = self.navigationController?.navigationBar else {fatalError("Navigation controller does not exist")}
+        navBar.backItem?.backBarButtonItem?.tintColor = UIColor(named: ".white")
     }
 
 }
