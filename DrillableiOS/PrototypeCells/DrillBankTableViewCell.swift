@@ -46,7 +46,7 @@ class DrillBankTableViewCell: UITableViewCell {
         }*/
     }
     
-    func requestReview() {
+    /*func requestReview() {
         let reviewController = JXReviewController()
         reviewController.title = "Rate this drill"
         reviewController.message = "Tap a star to rate it."
@@ -54,7 +54,7 @@ class DrillBankTableViewCell: UITableViewCell {
         /*let alert = UIAlertController(title: "Rate this drill", message: "", preferredStyle: .alert)
         present(alert, animated: true, completion: nil)*/
         //present(reviewController, animated: true)
-    }
+    }*/
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -71,7 +71,7 @@ class DrillBankTableViewCell: UITableViewCell {
     
 }
 
-extension DrillBankTableViewCell: JXReviewControllerDelegate {
+/*extension DrillBankTableViewCell: JXReviewControllerDelegate {
 
     func reviewController(_ reviewController: JXReviewController, didSelectWith point: Int) {
         print("Did select with \(point) point(s).")
@@ -84,4 +84,4 @@ extension DrillBankTableViewCell: JXReviewControllerDelegate {
     func reviewController(_ reviewController: JXReviewController, didSubmitWith point: Int) {
         print("Did submit with \(point) point(s).")
     }
-}
+}*/
