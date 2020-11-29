@@ -25,8 +25,10 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        emailTextField.layer.cornerRadius = 6
+        emailTextField.layer.borderWidth = 6
+        passwordTextField.layer.cornerRadius = 6
+        passwordTextField.layer.borderWidth = 6
     }
     
 
