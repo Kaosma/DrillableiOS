@@ -32,27 +32,36 @@ class DrillBankViewController: UIViewController {
             } else {
                 for document in querySnapshot!.documents {
                     let dictionary = document.data()
+                    let ratingsCollection = collection.document(document.documentID).collection("ratings")
                     
-                    if let name = dictionary["name"] as? String, let length = dictionary["length"] as? Int, let content = dictionary["content"] as? String {
-                        let id = document.documentID
+                    if let drillName = dictionary["name"] as? String, let drillLength = dictionary["length"] as? Int, let drillContent = dictionary["content"] as? String {
+                        let drillId = document.documentID
                         
-                        if let ratings = dictionary["ratings"] as? [String : Int] {
-                            let drill = Drill(name: name, length: length, content: content, id: id, ratings: ratings)
-                            self.drills.append(drill)
-                        } else {
-                            let drill = Drill(name: name, length: length, content: content, id: id, ratings: ["0":0])
-                            self.drills.append(drill)
+                        ratingsCollection.getDocuments() { (querySnapshot, err) in
+                            if let err = err {
+                                print("Error getting documents: \(err)")
+                            } else {
+                                var drillRatings : [Int] = []
+                                for ratingDocument in querySnapshot!.documents {
+                                    let ratingsDict = ratingDocument.data()
+                                    
+                                    if let drillRating = ratingsDict["rating"] as? Int {
+                                        drillRatings.append(drillRating)
+                                    }
+                                }
+                                let drill = Drill(name: drillName, length: drillLength, content: drillContent, id: drillId, ratings: drillRatings)
+                                self.drills.append(drill)
+                                DispatchQueue.main.async {
+                                    self.drillBankTableView.reloadData()
+                                }
+                            }
                         }
                     } else {
                         print("Could not retrieve drill")
                     }
-                    DispatchQueue.main.async {
-                        self.drillBankTableView.reloadData()
-                    }
                 }
             }
         }
-
     }
 
     /*
